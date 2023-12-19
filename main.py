@@ -46,9 +46,9 @@ def handle_message(update, context):
     update.message.reply_text(f"You said {update.message.text}, use the commands using /")
 
 
-Token = ("6412444381:AAEQ92wS-bJ8YqJIsnGw6DGVd9Ogim6Y2-Q")
+Token = ("Telegram bot token")
 # print(bot.get_me())
-updater = telegram.ext.Updater("6412444381:AAEQ92wS-bJ8YqJIsnGw6DGVd9Ogim6Y2-Q", use_context=True)
+updater = telegram.ext.Updater("Telegram bot token", use_context=True)
 disp = updater.dispatcher
 
 disp.add_handler(telegram.ext.CommandHandler('start', start))
